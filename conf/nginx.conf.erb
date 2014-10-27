@@ -20,7 +20,7 @@ http {
     listen <%= ENV["PORT"] %>;
 
     index index.html;
-    root /app/<%_ ENV["PROJECT_ROOT"]; %>;
+    root /app/<%= ENV["PROJECT_ROOT"]; %>;
   }
 }
 
