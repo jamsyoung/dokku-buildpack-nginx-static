@@ -7,10 +7,18 @@ doing.
 
 
 ## How to add
-In your repository create a `.env` file containing the following.  Set the
-PROEJCT_ROOT to be whatever you need it to be.
+In your repository create a `.env` file containing the following:
+
+```
+export BUILDPACK_URL="https://github.com/jamsyoung/dokku-buildpack-nginx-static.git"
+```
+
+Also create a directory named `.profile.d`.  Inside of that directory add a file
+named `startup.sh`.  This can actually be named anything, as long as it ends in
+`.sh`, as far as I know.  Inside this file, set the location to your
+`index.html` relative to your project root.  For most of my projects this is in
+`public`.
 
 ```
 export PROJECT_ROOT=public
-export BUILDPACK_URL="https://github.com/jamsyoung/dokku-buildpack-nginx-static.git"
 ```
