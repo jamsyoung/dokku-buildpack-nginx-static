@@ -1,4 +1,4 @@
-# Dokku buildpack: Static Nginx With Custom Root
+# Dokku Buildpack: Static Nginx With Custom Root
 This is basically a clone of numerous static Nginx buildpacks out there with
 the added benefit of allowing the project root to be set in an environment
 variable so your project is not forced to put the root of the static site you
